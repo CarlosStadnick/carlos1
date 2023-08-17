@@ -24,8 +24,14 @@
       // }
       // function delInicio(){
       // }
-      // function delFim(){
-      // }
+      function delFim(){
+        const length = window.valores.length;
+        if(length > 0){
+          delete window.valores[length-1]
+        }
+        atualizaValoresTela();
+      }
+      
     </script>
   <body>
     <h1>Estrutura de dados</h1>
@@ -51,4 +57,4 @@
     <h3>Valores<h3>
     <div id="valores"></div>
   </body>
-</html>
+</html> 
